@@ -1,0 +1,206 @@
+/* Color System */
+:root {
+  --primary-color: #3E362E; /* Dark brown for main elements */
+  --secondary-color: #865D36; /* Medium brown for secondary elements */
+  --text-color: #3E362E; /* Dark text for contrast */
+  --button-background: #865D36; /* Medium brown button background */
+  --button-hover: #93785B; /* Lighter brown for hover effect */
+  --card-background: #AC8968; /* Soft beige for cards */
+  --table-header-bg: #865D36; /* Medium brown for table header */
+  --table-row-bg: #FFF; /* White background for table rows */
+  --error-color: #ff6347; /* Delete button */
+  --success-color: #81c784; /* Success button */
+  /* --header-gradient: linear-gradient(90deg, var(--primary-color), var(--button-hover)); */
+}
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+.voucher-container {
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #EEE2DC; /* White background for the form container */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.voucher-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.voucher-table th {
+  background-color: var(--table-header-bg) !important; /* Force background color */
+  color: white !important;
+}
+
+
+
+.title {
+  color: var(--primary-color);
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+}
+
+.subtitle {
+  color: var(--primary-color);
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+}
+
+/* Table styling */
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+  table-layout: fixed; /* Ensures uniform column width */
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd !important; /* Light grey borders for the table */
+  word-wrap: break-word; /* Prevents long text from overflowing */
+}
+
+th {
+  background-color: var(--table-header-bg) !important; /* Medium brown background for table headers */
+  color: white; /* White text for headers */
+  font-size: 16px;
+}
+
+td {
+  background-color: var(--table-row-bg) !important; /* White background for table rows */
+}
+
+td input {
+  width: 100%; /* Ensure input field fills available space */
+  padding: 8px;
+  border: 1px solid #ddd !important; /* Light border for input fields */
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box; /* Ensures padding and border are inside the element's width */
+  background-color: #f9f9f9; /* Light background for input fields */
+}
+
+td input:focus {
+  border-color: var(--primary-color) !important; /* Dark brown border on focus */
+  outline: none;
+}
+
+
+/* Button styling */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Print Button */
+.print-button {
+  background-color: #ff9800 !important;
+  color: white;
+  margin-right: 10px;
+}
+
+.print-button:hover {
+  background-color: #7E685A;
+}
+
+/* Save Button */
+.save-button {
+  background-color: #8a8887 !important;
+  color: white;
+  margin-right: 10px;
+}
+
+.save-button:hover {
+  background-color: var(--button-hover);
+}
+
+/* Add Row Button */
+.add-row-button {
+  background-color: #AC3B61 !important;
+  color: white;
+  margin-right: 10px;
+}
+
+.add-row-button:hover {
+  background-color: var(--button-hover);
+}
+
+/* Delete Row Button */
+.delete-row-button {
+  background-color: #ff6347 !important; /* Red for Delete */
+  color: white;
+  margin-right: 10px;
+}
+
+.delete-row-button:hover {
+  background-color: #e74c3c; /* Darker red on hover */
+}
+
+/* Buttons Container */
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.buttons-container button {
+  margin: 0 10px;
+}
+
+/* Footer Styles */
+.footer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer p {
+  color: var(--primary-color);
+}
+
+.footer-roles {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.footer-roles p {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .voucher-container {
+    width: 100%;
+    padding: 15px;
+  }
+
+  table {
+    font-size: 12px;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 8px 15px;
+  }
+}

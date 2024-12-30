@@ -1,0 +1,97 @@
+/* Signup container styling */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #A69080; /* Soft neutral background */
+}
+
+/* Signup form box */
+.signup-content {
+    background: #FFF;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    border: 1px solid #93785B; /* Subtle border */
+}
+
+/* Heading */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #3E362E; /* Darker title color */
+    text-align: center;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input Fields */
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #AC8968;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none;
+    border-color: #865D36;
+    box-shadow: 0 0 5px rgba(134, 93, 54, 0.5);
+}
+
+/* Button Styling */
+button {
+    padding: 10px;
+    background-color: #865D36; /* Primary button color */
+    color: #FFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #3E362E; /* Darker hover effect */
+    transition: background-color 0.3s ease;
+}
+
+/* Notification messages */
+.success-message {
+    color: #4CAF50; /* Green success message */
+    margin-top: 10px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.error-message {
+    color: #F44336; /* Red error message */
+    margin-top: 10px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* Link to Login */
+.signup-footer {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.signup-footer a {
+    color: #865D36;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-footer a:hover {
+    text-decoration: underline;
+}
